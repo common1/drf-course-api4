@@ -28,3 +28,13 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+## 03 Django REST Framework- Nested Serializers, SerializerMethodField and Serializer Relations
+
+[https://www.youtube.com/watch?v=KfSYadIFHgY&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=3]
+
+```
+```
+
+```bash
+```
+
