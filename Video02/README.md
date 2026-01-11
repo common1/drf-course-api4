@@ -38,3 +38,29 @@ python manage.py runserver
 ```bash
 ```
 
+## 04 Django REST Framework - Serializer subclasses and Aggregated API data
+
+[https://www.youtube.com/watch?v=_xbI0-mjtw4&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=4]
+
+```
+```
+
+```bash
+```
+
+## 05 django-silk for Profiling and Optimization with Django REST Framework
+
+[https://www.youtube.com/watch?v=OG8alXR4bEs&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=5]
+[https://github.com/jazzband/django-silk]
+
+```
+Video02,Video03,Video04
+```
+
+```bash
+pip install django-silk
+python manage.py makemigrations
+python manage.py migrate
+python manage.py collectstatic
+python manage.py runserver```
+

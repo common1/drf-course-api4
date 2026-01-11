@@ -1,8 +1,10 @@
+from django.db.models import Max
 from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
 from api.serializers import (
     ProductSerializer,
     OrderSerializer,
+    ProductInfoSerializer,
 )
 from api.models import (
     Product,
@@ -28,7 +30,21 @@ def product_detail(request, pk):
 
 @api_view(['GET'])
 def order_list(request):
-    orders = Order.objects.all()
+    orders = Order.objects.prefetch_related(
+        'items__product',
+    )
     serializer = OrderSerializer(orders, many=True)
 
     return Response(serializer.data)
+
+@api_view(['GET'])
+def product_info(request):
+    products = Product.objects.all()
+    serializer = ProductInfoSerializer({
+        'products': products,
+        'count': len(products),
+        'max_price': products.aggregate(max_price=Max('price'))['max_price']
+    })
+
+    return Response(serializer.data)
+
