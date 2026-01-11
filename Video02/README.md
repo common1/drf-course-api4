@@ -63,4 +63,15 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic
 python manage.py runserver```
+```
+
+## 06 Django REST Framework - Generic Views | ListAPIView & RetrieveAPIView
+
+[https://www.youtube.com/watch?v=vExjSChWPWg&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=6]
+
+```
+```
+
+```bash
+```
 
