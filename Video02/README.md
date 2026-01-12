@@ -75,3 +75,12 @@ python manage.py runserver```
 ```bash
 ```
 
+##  07 Django REST Framework - Dynamic Filtering | Overriding get_queryset() method
+
+[https://www.youtube.com/watch?v=3Gi-w4Swge8&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=7]
+
+```
+```
+
+```bash
+```

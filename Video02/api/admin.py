@@ -15,9 +15,14 @@ class UserAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     pass
 
+class OrderItemInline(admin.TabularInline):
+    model = OrderItem
+
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    pass
+    inlines = [
+        OrderItemInline
+    ]
 
 @admin.register(OrderItem)
 class OrderItemAdmin(admin.ModelAdmin):
