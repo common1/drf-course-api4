@@ -84,3 +84,13 @@ python manage.py runserver```
 
 ```bash
 ```
+
+## 08 Django REST Framework - Permissions and Testing Permissions
+
+[https://www.youtube.com/watch?v=rx5IV_4Iuog&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=8]
+
+```
+```
+
+```bash
+```

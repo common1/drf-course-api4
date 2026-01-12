@@ -14,6 +14,9 @@ from api.models import (
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics
+from rest_framework.permissions import (
+    IsAuthenticated,
+)
 
 class ProductListAPIView(generics.ListAPIView):
     queryset = Product.objects.filter(stock__gt=0)
@@ -34,6 +37,7 @@ class UserOrderListAPIView(generics.ListAPIView):
          'items__product',
     )
     serializer_class =  OrderSerializer
+    permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         qs = super().get_queryset()       
