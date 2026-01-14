@@ -104,3 +104,12 @@ python manage.py runserver```
 
 ```bash
 ```
+## 10 Django REST Framework - Creating Data | ListCreateAPIView and Generic View Internals
+
+[https://www.youtube.com/watch?v=Jh85U1nhMh8&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=10]
+
+```
+```
+
+```bash
+```

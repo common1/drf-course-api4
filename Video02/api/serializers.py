@@ -10,9 +10,8 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = (
-            'id',
-            'name',
             'description',
+            'name',
             'price',
             'stock',
         )
@@ -22,6 +21,8 @@ class ProductSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 "Price must be greater than 0."
             )
+            
+        return value
 
 class OrderItemSerializer(serializers.ModelSerializer):
     # product = ProductSerializer()
