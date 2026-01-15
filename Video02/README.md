@@ -113,3 +113,13 @@ python manage.py runserver```
 
 ```bash
 ```
+
+## 11 Django REST Framework - Customising permissions in Generic Views | VSCode REST Client extension
+
+[https://www.youtube.com/watch?v=mlQZ1i8rUKQ&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=11]
+
+```
+```
+
+```bash
+```
