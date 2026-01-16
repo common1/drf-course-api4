@@ -4,11 +4,27 @@ GET http://localhost:8001/products/ HTTP/1.1
 
 POST http://localhost:8001/products/ HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NTgxMzg3LCJpYXQiOjE3Njg1ODEwODcsImp0aSI6Ijg5ZDhiYmU1NmI5NjRhYTJhMGU3MDQ2NWJmMzAyZjNiIiwidXNlcl9pZCI6IjEifQ.QHGoSUqFCwnGs0QYDyroHvQWg6eWIboEXrqvD8_F3js
 
 {
   "name": "Television",
   "price": 300.00,
   "stock": 14,
   "description": "An amazing television set."
+}
+
+###
+
+GET http://localhost:8001/user-orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NTgyOTUxLCJpYXQiOjE3Njg1ODI2NTEsImp0aSI6ImZlMmM0YWEzZDRmYzQ5Y2ZhNWQwZjg4YzIwMDI0MDA4IiwidXNlcl9pZCI6IjEifQ.JexiZrVPDc3ildgWmb8bBbHapjhUw4HNwiHMN-K2agA
+
+###
+
+POST http://localhost:8001/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "changeme"
 }
 
