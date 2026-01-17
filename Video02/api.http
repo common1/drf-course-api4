@@ -2,9 +2,29 @@ GET http://localhost:8001/products/ HTTP/1.1
 
 ###
 
+GET http://localhost:8001/products/1 HTTP/1.1
+
+###
+
+PUT http://localhost:8001/products/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Television",
+  "price": 300.00,
+  "stock": 14,
+  "description": "An amazing television set."
+}
+
+###
+
+DELETE http://localhost:8001/products/1 HTTP/1.1
+
+###
+
 POST http://localhost:8001/products/ HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NTgxMzg3LCJpYXQiOjE3Njg1ODEwODcsImp0aSI6Ijg5ZDhiYmU1NmI5NjRhYTJhMGU3MDQ2NWJmMzAyZjNiIiwidXNlcl9pZCI6IjEifQ.QHGoSUqFCwnGs0QYDyroHvQWg6eWIboEXrqvD8_F3js
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NjA0NjE3LCJpYXQiOjE3Njg2MDQzMTcsImp0aSI6IjQyMzAwZmJhZDljZjQ4Zjk5ZTUzYmU5MzFmODFmZTUwIiwidXNlcl9pZCI6IjEifQ.LjRKDUaOF7PnyoXlju2v-L3AHMfmS3LDGgHDGEgYqjw
 
 {
   "name": "Television",
